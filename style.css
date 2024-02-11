@@ -105,7 +105,8 @@ h2, h3 {
 
 .full{
   width: 100vw;
-  min-height: 100vh
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 .flex.inline {
@@ -443,7 +444,7 @@ body {
     letter-spacing: -0.03em;
     margin-bottom: 0px;
     margin-top: 0;
-    padding-right: 3.5vw;
+    /* padding-right: 3.5vw; */
     padding-top: 10vh;
 }
 
@@ -457,32 +458,170 @@ body {
 
 
 
-/*
-#startgame:hover {
-    /* background-color: white; */ /*
-    color: black;
-  }
-/*
-#startgame:active {
-    background-color: white;
-    color: black;
+#about{
+    margin: 0 29vw;
 }
-*/
 
 
-#startgame {
+#mainmenubutton {
     animation: glowing 2000ms infinite;
 }
 
-#aboutbutton, #highscoresbutton, #starttourn{
+
+.pages {
+    position: relative;
+    height: 35vw;
+}
+
+.page {
+    position: absolute;
+    font-size: 1.3vw;
+    height: 100%;
+    width: 100%;
+}
+
+.page-inner{
+  height: auto;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  row-gap: 0%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.page-inner h1 {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+
+.pager {
+  margin: 2% auto;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  width: 100%;
+  font-size: 1vw;
+}
+
+
+.page p{
+    margin-top: 0;
+    line-height: 1.8vw;
+}
+
+#page-2{
+    display: none;
+}
+#page-3{
+    display: none;
+}
+#page-4{
+    display: none;
+}
+#page-5{
+    display: none;
+}
+
+p.text-upscale {
+    text-transform: uppercase;
+}
+
+h2.label {
+    font-size: 1.5vw;
+    letter-spacing: 0.01rem;
+    margin-bottom: 3%;
+}
+
+
+
+img.value{
+    width: 100%;
+}
+
+
+
+img.inline-logo {
+    height: 2.5vw;
+    display: inline;
+    margin-right: 15px;
+}
+
+
+
+
+.double-button{
+  width: 25%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-transform: uppercase;
+  column-gap: 3%;
+}
+
+.double-button .button{
+  display: inline-block;
+  width: 50%;
+  padding: 4%;
+}
+
+#prevButton{
     animation: glowing 0ms infinite;
 }
 
-#bottomInfo{
-    display: absolute;
-    bottom: 0px;
-    right: 0px;
+
+#nextButton{
+    animation: glowing 0ms infinite;
 }
+
+
+.credits {
+  columns: 2;
+  text-align: center;
+  width: 100%;
+}
+
+.credit .label {
+    margin-bottom: 1%;
+    font-size: 1cqw;
+}
+
+.credit .credit-name {
+    margin-bottom: 6%;
+    font-size: 3vw;
+    letter-spacing: 0.005rem;
+}
+
+.credits .span-all{
+  column-span: all;
+  margin: auto;
+}
+
+.credits .liquidity .credit-name{
+  font-size: 2vw;
+  letter-spacing: 0.01rem;
+}
+
+
+
+
+.social-handles {
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.handle{}
+
+.qr{
+  width: 100%;
+}
+
+
 
 
 
@@ -512,4 +651,5 @@ body {
 video {
   max-width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
