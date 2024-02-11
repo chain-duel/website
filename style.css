@@ -503,3 +503,13 @@ body {
 #buttonlink {
     all: unset;
 }
+
+
+#slogan{
+  text-transform: uppercase;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
