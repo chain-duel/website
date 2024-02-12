@@ -87,7 +87,6 @@ h2, h3 {
     color: white;
     text-align: center;
     margin-bottom: 0px;
-    font-size: 0.8cqw;
     text-transform: uppercase;
     letter-spacing: 0.03rem;
 }
@@ -255,6 +254,8 @@ header{
 .qrcode {
   filter: invert(1);
   mix-blend-mode: screen;
+  z-index: 1000;
+  /* background: red; */
 }
 
 
@@ -546,7 +547,7 @@ img.value{
 img.inline-logo {
     height: 2.5vw;
     display: inline;
-    margin-right: 15px;
+    margin: 15px;
 }
 
 
@@ -620,6 +621,7 @@ img.inline-logo {
 
 .qr{
   width: 100%;
+  /* background: #ff0505; */
 }
 
 
