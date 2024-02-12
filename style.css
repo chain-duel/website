@@ -115,6 +115,10 @@ h2, h3 {
     column-gap: 10px;
 }
 
+.full-image {
+  width: 100%;
+  padding: 10px;
+}
 
 
 .mt-10{
