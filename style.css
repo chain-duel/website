@@ -653,6 +653,7 @@ img.inline-logo {
 
 #slogan{
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 
 video {
