@@ -118,6 +118,7 @@ h2, h3 {
 .full-image {
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 
@@ -495,6 +496,7 @@ body {
   max-width: 800px;
   margin: auto;
   margin-top: 100px;
+  padding: 0 20px 0 20px;
 }
 
 .page-inner h1 {
