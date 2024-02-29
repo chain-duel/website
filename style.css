@@ -455,6 +455,15 @@ body {
     padding-top: 10vh;
 }
 
+
+@media (min-width: 1250px) {
+  #chainduel{
+      font-size: 220px;
+  }
+}
+
+
+
 #slogan{
     margin-top: 0px;
     text-align: center;
