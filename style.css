@@ -1,48 +1,52 @@
-@import url('fonts/Inter/inter.css');
+@import url("fonts/Inter/inter.css");
 
 @font-face {
   font-family: "BureauGrotesque";
   src: url("fonts/BureauGrotesque/BureauGrotesque.eot");
-  src: url("fonts/BureauGrotesque/BureauGrotesque.eot?#iefix") format("embedded-opentype"),
-  url("fonts/BureauGrotesque/BureauGrotesque.woff2") format("woff2"),
-  url("fonts/BureauGrotesque/BureauGrotesque.woff") format("woff"),
-  url("fonts/BureauGrotesque/BureauGrotesque.ttf") format("truetype"),
-  url("fonts/BureauGrotesque/BureauGrotesque.svg#BureauGrotesque") format("svg");
+  src: url("fonts/BureauGrotesque/BureauGrotesque.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/BureauGrotesque/BureauGrotesque.woff2") format("woff2"),
+    url("fonts/BureauGrotesque/BureauGrotesque.woff") format("woff"),
+    url("fonts/BureauGrotesque/BureauGrotesque.ttf") format("truetype"),
+    url("fonts/BureauGrotesque/BureauGrotesque.svg#BureauGrotesque")
+      format("svg");
 }
 
-
-
-
-
-html, body, button {
-  font-family: 'Inter', sans-serif;
+html,
+body,
+button {
+  font-family: "Inter", sans-serif;
 }
-
 
 body {
   padding: 0;
   margin: 0;
   color: #fff;
   background-color: black;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../images/chainduel_bg.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/chainduel_bg.jpg);
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
 }
 
 audio {
-    height: 0;
+  height: 0;
 }
 
 a {
   color: #fff;
 }
 
-.inline{
+.inline {
   display: inline-block;
 }
 
-.grey{
+.grey {
   color: #fff;
   opacity: 0.5;
 }
@@ -51,22 +55,24 @@ a {
   opacity: 0.2;
 }
 
-.white{
-  background: #fff
+.white {
+  background: #fff;
 }
 
-.black{
-  background: #000
+.black {
+  background: #000;
 }
-
-
-
 
 h1 {
-  text-align: center
+  text-align: center;
 }
 
-h1, h2, h3, h4, .condensed {
+h1,
+h2,
+h3,
+h4,
+a,
+.condensed {
   margin-top: 0px;
   line-height: 0.95;
   font-family: "BureauGrotesque";
@@ -75,44 +81,43 @@ h1, h2, h3, h4, .condensed {
   letter-spacing: -0.05vw;
 }
 
-h2, h3 {
-    letter-spacing: 0.05vw;
+h2,
+h3 {
+  letter-spacing: 0.05vw;
 }
 
-.hide{
+.hide {
   display: none !important;
 }
 
 .label {
-    color: white;
-    text-align: center;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    letter-spacing: 0.03rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
 }
 
-
-
-.flex{
+.flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.flex-center{
-  justify-content:center;
+.flex-center {
+  justify-content: center;
 }
 
-.full{
+.full {
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 100px;
 }
 
 .flex.inline {
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .full-image {
@@ -121,26 +126,25 @@ h2, h3 {
   box-sizing: border-box;
 }
 
-
-.mt-10{
+.mt-10 {
   margin-top: 1vw;
 }
 
 .mb-0 {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
-.mb-10{
+.mb-10 {
   margin-bottom: 1vw;
 }
 
-.mb-30{
+.mb-30 {
   margin-bottom: 3vw;
 }
 
-header{
+header {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 #brand {
@@ -149,21 +153,20 @@ header{
   width: 100%;
 }
 
-
-#chain{
-    color: white;
-    margin-top: 0%;
-    margin-left: 1%;
-    text-align: left;
-    font-size: 2.5cqw;
+#chain {
+  color: white;
+  margin-top: 0%;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 2.5cqw;
 }
 
-#duel{
-    color: white;
-    margin-top: 0%;
-    text-align: right;
-    font-size: 2.5cqw;
-    margin-right: 1%;
+#duel {
+  color: white;
+  margin-top: 0%;
+  text-align: right;
+  font-size: 2.5cqw;
+  margin-right: 1%;
 }
 
 @keyframes glowing {
@@ -181,27 +184,24 @@ header{
   }
 }
 
-
-.button{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    width: 25%;
-    height: 8%;
-    font-size: 0.8cqw;
-    padding: 1%;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+.button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 25%;
+  height: 8%;
+  font-size: 0.8cqw;
+  padding: 1%;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
-
-
-.double-button{
+.double-button {
   display: flex;
   margin: auto;
   width: 25%;
@@ -210,51 +210,44 @@ header{
   gap: 4%;
 }
 
-.double-button .button{
+.double-button .button {
   margin: 0;
   width: 49%;
   height: 100%;
   padding: 3.5%;
 }
 
-
-
-.hero-outline{
-    position:static;
-    margin-bottom: 1%;
-    text-align: center;
-    font-size: 8cqw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: white;
+.hero-outline {
+  position: static;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 8cqw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: white;
 }
 
-
-.outline{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: white;
+.outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: white;
 }
 
 .center {
   margin: auto;
 }
 
-.max-800{
-  max-width: 800px
+.max-800 {
+  max-width: 800px;
 }
 
-
-.max-1200{
-  max-width: 1200px
+.max-1200 {
+  max-width: 1200px;
 }
 
-
-.text-center{
+.text-center {
   text-align: center;
 }
-
-
 
 .qrcode {
   filter: invert(1);
@@ -263,65 +256,56 @@ header{
   /* background: red; */
 }
 
-
-
 #socialFollow {
-    font-size: 1cqw;
-    text-align: center;
+  font-size: 1cqw;
+  text-align: center;
 }
 .social-icon {
-    display: inline-block;
-    height: 1.5cqw;
-    margin-bottom: -0.5cqw;
+  display: inline-block;
+  height: 1.5cqw;
+  margin-bottom: -0.5cqw;
 }
-
-
-
-
-
 
 /*
 Bottom bar with game data for bracket screen and game screen
 */
 
 .bracketDetails {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-top: 1px solid #ffffff36
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #ffffff36;
 }
 
-
-.bracketDetail{
+.bracketDetail {
   width: 25%;
-  padding:1vw;
+  padding: 1vw;
   box-sizing: border-box;
   border-right: 1px solid #ffffff36;
 }
 
-
-.in-game .bracketDetail{
-  padding:0.5vw;
+.in-game .bracketDetail {
+  padding: 0.5vw;
 }
 
-.bracketDetail:last-child{
-  border-right:none
+.bracketDetail:last-child {
+  border-right: none;
 }
-.bracketDetail .label{
-  font-size:1vw;
+.bracketDetail .label {
+  font-size: 1vw;
   text-transform: uppercase;
-  opacity:0.7
+  opacity: 0.7;
 }
 
-.in-game .bracketDetail .label{
-  font-size:0.8vw;
+.in-game .bracketDetail .label {
+  font-size: 0.8vw;
 }
 
-.bracketDetail .value{
+.bracketDetail .value {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -330,50 +314,36 @@ Bottom bar with game data for bracket screen and game screen
   padding-left: 1.5vw;
 }
 
-
-.bracketDetail .value.players{
+.bracketDetail .value.players {
   padding-left: 0;
 }
 
-
-.bracketDetail .value h3{
-  font-size:3vw;
+.bracketDetail .value h3 {
+  font-size: 3vw;
   margin-bottom: 0;
 }
 
-.in-game .bracketDetail .value h3{
-  font-size:2vw;
+.in-game .bracketDetail .value h3 {
+  font-size: 2vw;
 }
 
-
-
-
-
-
-
-
-
-.sponsorship{
+.sponsorship {
   display: none;
   margin-bottom: 2%;
 }
 
-.sponsored-img{
+.sponsored-img {
   height: 4vw;
   margin: auto;
   margin-top: 0.8vw;
-  display:block;
+  display: block;
 }
 
-
-.sponsorship-amount{
+.sponsorship-amount {
   font-weight: 900;
 }
 
-
-
-
-#loading.overlay{
+#loading.overlay {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -382,121 +352,111 @@ Bottom bar with game data for bracket screen and game screen
   top: 0;
   align-items: center;
   justify-content: center;
-  transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -webkit-transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
   opacity: 1;
-  z-index: 10
+  z-index: 10;
 }
 
-#loading.overlay img{
+#loading.overlay img {
   display: block;
   width: 7vw;
   height: 7vw;
 }
 
-
-#loading.overlay.hide{
+#loading.overlay.hide {
   opacity: 0;
 }
 
-
-.animateIn{
-  transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -webkit-transition: all .35s ease-in-out;
+.animateIn {
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
 }
 
-.empty{
+.empty {
   opacity: 0;
 }
-
-
-
-
-
-
 
 body {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(images/chainduel_bg.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/chainduel_bg.jpg);
   background-attachment: fixed;
 }
 
-#logo{
-    height: auto;
-    width: 20cqw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 2%;
-    /* display:none */
+#logo {
+  height: auto;
+  width: 20cqw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 2%;
+  /* display:none */
 }
 
-#presents{
-    margin-top: 15px;
-    text-align: center;
-    color: white;
-    font-size: 0.8cqw;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    /* display:none */
+#presents {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 0.8cqw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  /* display:none */
 }
 
-#chainduel{
-    text-align: center;
-    color: white;
-    font-size: 15vw;
-    letter-spacing: -0.03em;
-    margin-bottom: 0px;
-    margin-top: 0;
-    /* padding-right: 3.5vw; */
-    padding-top: 10vh;
+#chainduel {
+  text-align: center;
+  color: white;
+  font-size: 15vw;
+  letter-spacing: -0.03em;
+  margin-bottom: 0px;
+  margin-top: 0;
+  /* padding-right: 3.5vw; */
+  padding-top: 10vh;
 }
-
 
 @media (min-width: 1250px) {
-  #chainduel{
-      font-size: 220px;
+  #chainduel {
+    font-size: 220px;
   }
 }
 
-
-
-#slogan{
-    margin-top: 0px;
-    text-align: center;
-    color: white;
-    letter-spacing: 0.1rem;
-    font-size: 1.2vw;
+#slogan {
+  margin-top: 0px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 1.2vw;
 }
 
-
-
-#about{
-    margin: 0 29vw;
+#about {
+  margin: 0 29vw;
 }
-
 
 #mainmenubutton {
-    animation: glowing 2000ms infinite;
+  animation: glowing 2000ms infinite;
 }
 
-
 .pages {
-    position: relative;
-    height: 35vw;
+  position: relative;
+  height: 35vw;
 }
 
 .page {
-    position: absolute;
-    font-size: 1.3vw;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  font-size: 1.3vw;
+  height: 100%;
+  width: 100%;
 }
 
-.page-inner{
+.page-inner {
   height: auto;
   align-items: center;
   text-align: center;
@@ -505,14 +465,13 @@ body {
   max-width: 800px;
   margin: auto;
   margin-top: 100px;
-  padding: 0 20px 0 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .page-inner h1 {
   margin: auto;
   margin-bottom: 1rem;
 }
-
 
 .pager {
   margin: 2% auto;
@@ -522,53 +481,45 @@ body {
   font-size: 1vw;
 }
 
-
-.page p{
-    margin-top: 0;
-    line-height: 1.8vw;
+.page p {
+  margin-top: 0;
+  line-height: 1.8vw;
 }
 
-#page-2{
-    display: none;
+#page-2 {
+  display: none;
 }
-#page-3{
-    display: none;
+#page-3 {
+  display: none;
 }
-#page-4{
-    display: none;
+#page-4 {
+  display: none;
 }
-#page-5{
-    display: none;
+#page-5 {
+  display: none;
 }
 
 p.text-upscale {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h2.label {
-    font-size: 1.5vw;
-    letter-spacing: 0.01rem;
-    margin-bottom: 3%;
+  font-size: 1.5vw;
+  letter-spacing: 0.01rem;
+  margin-bottom: 3%;
 }
 
-
-
-img.value{
-    width: 100%;
+img.value {
+  width: 100%;
 }
-
-
 
 img.inline-logo {
-    height: 2.5vw;
-    display: inline;
-    margin: 15px;
+  height: 2.5vw;
+  display: inline;
+  margin: 15px;
 }
 
-
-
-
-.double-button{
+.double-button {
   width: 25%;
   display: flex;
   margin: auto;
@@ -577,21 +528,19 @@ img.inline-logo {
   column-gap: 3%;
 }
 
-.double-button .button{
+.double-button .button {
   display: inline-block;
   width: 50%;
   padding: 4%;
 }
 
-#prevButton{
-    animation: glowing 0ms infinite;
+#prevButton {
+  animation: glowing 0ms infinite;
 }
 
-
-#nextButton{
-    animation: glowing 0ms infinite;
+#nextButton {
+  animation: glowing 0ms infinite;
 }
-
 
 .credits {
   columns: 2;
@@ -600,69 +549,54 @@ img.inline-logo {
 }
 
 .credit .label {
-    margin-bottom: 1%;
-    font-size: 1cqw;
+  margin-bottom: 1%;
+  font-size: 1cqw;
 }
 
 .credit .credit-name {
-    margin-bottom: 6%;
-    font-size: 3vw;
-    letter-spacing: 0.005rem;
+  margin-bottom: 6%;
+  font-size: 3vw;
+  letter-spacing: 0.005rem;
 }
 
-.credits .span-all{
+.credits .span-all {
   column-span: all;
   margin: auto;
 }
 
-.credits .liquidity .credit-name{
+.credits .liquidity .credit-name {
   font-size: 2vw;
   letter-spacing: 0.01rem;
 }
 
-
-
-
 .social-handles {
-    width: 100%;
-    /* display: flex; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0 40px;
+  width: 100%;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
 }
 
-.handle{}
-
-.qr{
+.qr {
   width: 100%;
   /* background: #ff0505; */
 }
 
-
-
-
-
-#splits, #version{
-    margin-top: 0;
-    text-align: center;
-    color: grey;
-    font-size: 0.8cqw;
-    letter-spacing: 0.03rem;
-    line-height: 1.4rem;
+#version {
+  margin-top: 0;
+  text-align: center;
+  color: grey;
+  font-size: 0.8cqw;
+  letter-spacing: 0.03rem;
+  line-height: 1.4rem;
 }
-
-#splits{
-    margin-top: 3%;
-}
-
 
 #buttonlink {
-    all: unset;
+  all: unset;
 }
 
-
-#slogan{
+#slogan {
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
@@ -672,7 +606,6 @@ video {
   height: auto;
   margin-bottom: 20px;
 }
-
 
 #announcement {
   position: fixed;
@@ -686,48 +619,76 @@ video {
   z-index: 3;
 }
 
-
-
-
-
-
-
-
-
-:root {--swiper-pagination-color: #fff;}
-.swiper {
-    width: 100%;
-    height: 28vw;
-    max-height: 800px;
-    overflow: hidden;
-    padding: 62px 0 78px 0;
-    margin-bottom: 100px;
+:root {
+  --swiper-pagination-color: #fff;
 }
-.swiper-wrapper{
+.swiper {
+  width: 100%;
+  height: 28vw;
+  max-height: 800px;
+  overflow: hidden;
+  padding: 62px 0 78px 0;
+  margin-bottom: 100px;
+}
+.swiper-wrapper {
   display: flex;
   height: 100%;
 }
-.swiper-slide{
+.swiper-slide {
   width: 100%;
   height: 100%;
   opacity: 0.8;
 }
-.swiper-slide.swiper-slide-active{
-  opacity: 1
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
 }
 
-.swiper-slide-image{
+.swiper-slide-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .swiper-slide-title {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 21px;
-    color: #fff;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 21px;
+  color: #fff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #0000001a;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 90vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
