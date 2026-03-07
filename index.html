@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Chain Duel</title>
+    <title>Chain Duel | Bitcoin Lightning Game</title>
+    <meta
+      name="description"
+      content="Chain Duel is a Bitcoin and Lightning game experience. Compete for sats, explore value splits, and join the global Chain Duel community."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://chainduel.net/" />
 
     <link
       rel="apple-touch-icon"
@@ -35,9 +41,25 @@
     <meta name="theme-color" content="#ffffff" />
 
     <meta property="og:title" content="Chain Duel ⚡️ Lightning Game" />
-    <meta property="og:description" content="Compete for sats" />
+    <meta
+      property="og:description"
+      content="Compete for sats in a Bitcoin-native Lightning game experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chainduel.net/" />
     <meta
       property="og:image"
+      content="https://chainduel.net/images/og_image_site.jpg"
+    />
+    <meta property="og:site_name" content="Chain Duel" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chain Duel ⚡️ Lightning Game" />
+    <meta
+      name="twitter:description"
+      content="Compete for sats in a Bitcoin-native Lightning game experience."
+    />
+    <meta
+      name="twitter:image"
       content="https://chainduel.net/images/og_image_site.jpg"
     />
 
@@ -46,6 +68,68 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://chainduel.net/#organization",
+            "name": "Chain Duel",
+            "url": "https://chainduel.net/",
+            "logo": "https://chainduel.net/images/og_image_site.jpg",
+            "member": [
+              {
+                "@id": "https://chainduel.net/#francis-mars"
+              },
+              {
+                "@id": "https://chainduel.net/#pedro"
+              }
+            ],
+            "sameAs": [
+              "https://twitter.com/chainduel",
+              "https://primal.net/ChainDuel",
+              "https://t.me/chainduel",
+              "https://github.com/francismars/chain-duel",
+              "https://geyser.fund/project/chainduel"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://chainduel.net/#website",
+            "url": "https://chainduel.net/",
+            "name": "Chain Duel",
+            "publisher": {
+              "@id": "https://chainduel.net/#organization"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://chainduel.net/#francis-mars",
+            "name": "Francis Mars",
+            "jobTitle": "Software Engineer",
+            "url": "https://www.francismars.com/",
+            "sameAs": [
+              "https://github.com/francismars/",
+              "https://twitter.com/BtcFrancis",
+              "https://njump.me/nprofile1qqs96w4cwmpqdgm66wcffcstlsu5rhel5gdpttyw5akkjxz8x7ykdxsf4lell"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://chainduel.net/#pedro",
+            "name": "Pedro",
+            "jobTitle": "Designer",
+            "url": "https://pedromvpg.com/",
+            "sameAs": [
+              "https://github.com/pedromvpg",
+              "https://x.com/pedromvpg",
+              "https://njump.me/npub13nfdp7p3pacqn6202q33sur4djeehf50xagxq3y3pchhzjptz7yqenvn7c"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body id="home">
     <nav class="navbar">
@@ -55,6 +139,7 @@
         <li><a href="#videos">Videos</a></li>
         <li><a href="#splits">Splits</a></li>
         <li><a href="#infrastructure">Infrastructure</a></li>
+        <li><a href="#team">Team</a></li>
         <li><a href="#contribute">Contribute</a></li>
         <li>
           <a class="nav-play" href="https://game.chainduel.net" target="_blank" rel="noopener noreferrer">Play</a>
@@ -155,6 +240,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_bitcoin2024_nashville.jpg"
+                alt="Chain Duel at Bitcoin 2024 in Nashville"
               />
               <h2 class="swiper-slide-title">Bitcoin 2024, Nashville 🇺🇸</h2>
             </div>
@@ -162,6 +248,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_prague2024.jpg"
+                alt="Chain Duel at BTC Prague 2024"
               />
               <h2 class="swiper-slide-title">BTC Prague 2024 🇨🇿</h2>
             </div>
@@ -169,6 +256,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_warsaw24.jpg"
+                alt="Chain Duel at Bitcoin Film Fest Halving Party 2024 in Warsaw"
               />
               <h2 class="swiper-slide-title">
                 Bitcoin Film Fest Halving Party 2024, Warsaw 🇵🇱
@@ -178,6 +266,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_innovationfest24.jpg"
+                alt="Chain Duel at Innovation Legacy Fest 2024 in San Salvador"
               />
               <h2 class="swiper-slide-title">
                 Innovation Legacy Fest, Parque Cuscatlán 2024, San Salvador 🇸🇻
@@ -187,6 +276,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_santorini24.jpg"
+                alt="Chain Duel at Santorini Halving Party 2024"
               />
               <h2 class="swiper-slide-title">
                 Love is Bitcoin Halving Party 2024, Santorini 🇬🇷
@@ -196,6 +286,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_berlin24.jpg"
+                alt="Chain Duel at Bitcoin Day 2024 in Berlin"
               />
               <h2 class="swiper-slide-title">Bitcoin Day 2024, Berlin 🇩🇪</h2>
             </div>
@@ -203,6 +294,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_bitcoinatlantis24.jpg"
+                alt="Chain Duel at Bitcoin Atlantis 2024 in Funchal"
               />
               <h2 class="swiper-slide-title">
                 Bitcoin Atlantis 2024, Funchal 🇵🇹
@@ -212,6 +304,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_rotan.jpg"
+                alt="Chain Duel at Amity Age 2023 in Roatan"
               />
               <h2 class="swiper-slide-title">Amity Age 2023, Rotan 🇭🇳</h2>
             </div>
@@ -219,6 +312,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_elSalvador.jpg"
+                alt="Chain Duel at Adopting Bitcoin 2023 in San Salvador"
               />
               <h2 class="swiper-slide-title">
                 Adopting Bitcoin 2023, San Salvador 🇸🇻
@@ -228,6 +322,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_azores.jpg"
+                alt="Chain Duel at BTC Azores 2023"
               />
               <h2 class="swiper-slide-title">BTC Azores 2023, Azores 🇵🇹</h2>
             </div>
@@ -235,6 +330,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_lugano.jpg"
+                alt="Chain Duel at Plan B Forum 2023 in Lugano"
               />
               <h2 class="swiper-slide-title">Plan B Forum 2023, Lugano 🇨🇭</h2>
             </div>
@@ -242,6 +338,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_viareggio.jpg"
+                alt="Chain Duel at Build the Builders 2023 in Viareggio"
               />
               <h2 class="swiper-slide-title">
                 Build the Builders 2023, Viareggio 🇮🇹
@@ -251,6 +348,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_riga.jpg"
+                alt="Chain Duel at Baltic Honey Badger 2023 in Riga"
               />
               <h2 class="swiper-slide-title">
                 Baltic Honey Badger 2023, Riga 🇱🇻
@@ -260,6 +358,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_amsterdam.jpg"
+                alt="Chain Duel at Bitcoin Amsterdam 2023"
               />
               <h2 class="swiper-slide-title">
                 Bitcoin Amsterdam 2023, Amsterdam 🇳🇱
@@ -269,6 +368,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_cubo.jpg"
+                alt="Chain Duel at Cubo Plus 2023 in El Zonte"
               />
               <h2 class="swiper-slide-title">Cubo+ 2023, El Zonte 🇸🇻</h2>
             </div>
@@ -276,6 +376,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_bitcoinpark23.jpg"
+                alt="Chain Duel at Bitcoin Park 2023 in Nashville"
               />
               <h2 class="swiper-slide-title">
                 Bitcoin Park 2023, Nashville 🇺🇸
@@ -285,6 +386,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_miami.jpg"
+                alt="Chain Duel at Bitcoin 2023 in Miami"
               />
               <h2 class="swiper-slide-title">Bitcoin 2023, Miami 🇺🇸</h2>
             </div>
@@ -292,6 +394,7 @@
               <img
                 class="swiper-slide-image"
                 src="images/slider_events/chainDuel_events_viareggio23.jpg"
+                alt="Chain Duel at Lightning Summit 2023 in Viareggio"
               />
               <h2 class="swiper-slide-title">
                 Lightning Summit 2023, Viareggio 🇮🇹
@@ -335,6 +438,7 @@
           <img
             class="full-image"
             src="https://game.chainduel.net/images/about/value-for-value.png"
+            alt="Chain Duel value-for-value Lightning split diagram"
           />
         </div>
 
@@ -347,19 +451,88 @@
           <img
             class="inline-logo"
             src="https://game.chainduel.net/images/about/bitcoin_core.png"
+            alt="Bitcoin Core logo"
           />
           <img
             class="inline-logo"
             src="https://game.chainduel.net/images/about/lnd.png"
+            alt="LND logo"
           />
           <img
             class="inline-logo"
             src="https://game.chainduel.net/images/about/rtl.png"
+            alt="Ride The Lightning logo"
           />
           <img
             class="inline-logo"
             src="https://game.chainduel.net/images/about/lnbits.png"
+            alt="LNbits logo"
           />
+        </div>
+
+        <div id="team" class="page-inner">
+          <h2>TEAM</h2>
+          <p class="section-intro">
+            We are two Portuguese friends and partners building Chain Duel. We
+            care deeply about Bitcoin, community building, and practical
+            adoption around the world.
+          </p>
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://github.com/francismars.png"
+                alt="Francis Mars profile photo"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Francis Mars</h3>
+              <p class="team-role">Software Engineer</p>
+              <p>
+                Extrovert builder focused on execution, UX, and
+                community momentum. Known for practical decisions and
+                systems thinking.
+              </p>
+              <p class="team-links">
+                <a href="https://www.francismars.com/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="https://github.com/francismars/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/BtcFrancis" target="_blank" rel="noopener noreferrer">X</a>
+                <a
+                  href="https://njump.me/nprofile1qqs96w4cwmpqdgm66wcffcstlsu5rhel5gdpttyw5akkjxz8x7ykdxsf4lell"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Nostr</a
+                >
+              </p>
+            </article>
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://github.com/pedromvpg.png"
+                alt="Pedro profile photo"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Pedro</h3>
+              <p class="team-role">Designer</p>
+              <p>
+                Creative lead shaping visual experience with
+                relentless curiosity, craft, and a sharp eye for Bitcoin-native
+                product storytelling.
+              </p>
+              <p class="team-links">
+                <a href="https://pedromvpg.com/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="https://github.com/pedromvpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/pedromvpg" target="_blank" rel="noopener noreferrer">X</a>
+                <a
+                  href="https://njump.me/npub13nfdp7p3pacqn6202q33sur4djeehf50xagxq3y3pchhzjptz7yqenvn7c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Nostr</a
+                >
+              </p>
+            </article>
+          </div>
         </div>
 
         <div id="contribute" class="page-inner">
@@ -368,6 +541,7 @@
             <img
               class="contribute-qr"
               src="images/ChainDuel_LNURL.svg"
+              alt="Chain Duel LNURL QR code for contributions"
             />
           </div>
           <div class="handles">
@@ -375,6 +549,7 @@
               <img
                 class="handle-icon"
                 src="https://game.chainduel.net/images/github.png"
+                alt="GitHub icon"
               />
               <a
                 href="https://github.com/francismars/chain-duel"
@@ -388,6 +563,7 @@
               <img
                 class="handle-icon"
                 src="https://game.chainduel.net/images/telegram_logo.webp"
+                alt="Telegram icon"
               />
               <a href="https://t.me/chainduel" target="_blank"
                 >t.me/chainduel</a
@@ -399,6 +575,7 @@
               <img
                 class="handle-icon"
                 src="https://game.chainduel.net/images/geyserfund.svg"
+                alt="Geyser icon"
               />
               <a href="https://geyser.fund/project/chainduel" target="_blank"
                 >chainduel</a
@@ -410,6 +587,7 @@
               <img
                 class="handle-icon"
                 src="https://game.chainduel.net/images/social/Nostr.png"
+                alt="Nostr icon"
               />
               <a href="https://primal.net/ChainDuel" target="_blank"
                 >primal.net/ChainDuel</a
@@ -421,6 +599,7 @@
               <img
                 class="handle-icon"
                 src="https://game.chainduel.net/images/twitter.webp"
+                alt="X icon"
               />
               <a href="https://twitter.com/chainduel" target="_blank"
                 >@chainduel</a
@@ -435,6 +614,7 @@
       id="announcement"
       style="display: none"
       src="https://game.chainduel.net/images/announcement/BitcoinAtlantis2024_announcement_4.gif"
+      alt="Chain Duel event announcement"
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
