@@ -133,7 +133,16 @@
   </head>
   <body id="home">
     <nav class="navbar">
-      <ul>
+      <button
+        class="navbar-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navbar-menu"
+      >
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <ul id="navbar-menu" class="navbar-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#appearances">Appearances</a></li>
         <li><a href="#videos">Videos</a></li>
@@ -141,10 +150,14 @@
         <li><a href="#infrastructure">Infrastructure</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contribute">Contribute</a></li>
-        <li>
-          <a class="nav-play" href="https://game.chainduel.net" target="_blank" rel="noopener noreferrer">Play</a>
-        </li>
       </ul>
+      <a
+        class="nav-play navbar-play-persistent"
+        href="https://game.chainduel.net"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Play</a
+      >
     </nav>
 
     <div class="flex full flex-center">

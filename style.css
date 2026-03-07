@@ -666,32 +666,86 @@ video {
   background-color: #0000001a;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
   z-index: 1000;
 }
-.navbar ul {
+.navbar-menu {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px 14px;
   padding: 0;
   margin: 0;
+  flex: 1;
+}
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 42px;
+  height: 36px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-toggle-icon,
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto;
+  content: "";
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-toggle-icon::before {
+  transform: translateY(-6px);
+}
+
+.navbar-toggle-icon::after {
+  transform: translateY(4px);
+}
+
+.navbar-toggle.is-open .navbar-toggle-icon {
+  background: transparent;
+}
+
+.navbar-toggle.is-open .navbar-toggle-icon::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.navbar-toggle.is-open .navbar-toggle-icon::after {
+  transform: translateY(-2px) rotate(-45deg);
 }
 .navbar a {
   text-decoration: none;
   color: #ffffff;
+  padding: 6px 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar a[href^="#"].active {
+  background: #ffffff;
+  color: #000;
 }
 
 .nav-play {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
-  padding: 8px 14px;
-  border-radius: 999px;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 0;
   font-family: "BureauGrotesque";
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -699,6 +753,10 @@ video {
 .nav-play:hover {
   background: #fff;
   color: #000;
+}
+
+.navbar-play-persistent {
+  margin-left: auto;
 }
 
 html {
@@ -727,12 +785,12 @@ html {
   align-items: center;
   justify-content: center;
   min-width: 160px;
-  padding: 12px 18px;
-  border-radius: 999px;
-  border: 1px solid #fff;
+  padding: 10px 16px;
+  border-radius: 0;
+  border: 2px solid #fff;
   text-decoration: none;
   font-family: "BureauGrotesque";
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
   transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
@@ -894,15 +952,44 @@ html {
 @media (max-width: 640px) {
   .navbar {
     padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
-  .navbar ul {
+  .navbar-toggle {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    gap: 8px 10px;
+    order: 1;
   }
 
-  .navbar a {
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px;
+    padding-top: 8px;
+    border-top: 1px solid #ffffff33;
+    order: 3;
+    flex: 0 0 100%;
+  }
+
+  .navbar-menu.is-open {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    display: block;
+    text-align: center;
     font-size: 14px;
+  }
+
+  .navbar-play-persistent {
+    order: 2;
+    margin-left: 0;
   }
 
   .hero {
