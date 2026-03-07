@@ -761,7 +761,7 @@ html {
 .value-item {
   background: #ffffff14;
   border: 1px solid #ffffff29;
-  border-radius: 12px;
+  border-radius: 0;
   padding: 14px;
   text-align: left;
 }
@@ -804,7 +804,7 @@ html {
 .team-card {
   background: #ffffff14;
   border: 1px solid #ffffff33;
-  border-radius: 14px;
+  border-radius: 0;
   padding: 20px 16px;
   text-align: left;
 }
