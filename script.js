@@ -101,9 +101,9 @@ if (footerYear) {
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);
 
-/* Scroll-reveal: animate when entering viewport; delay until after load to avoid layout-shift glitch */
+/* Scroll-reveal: animate when entering viewport; run as soon as DOM is ready */
 const revealEls = document.querySelectorAll('.reveal');
-let loadFired = false;
+let revealReady = false;
 
 function revealInViewport() {
   revealEls.forEach((el) => {
@@ -117,7 +117,7 @@ function revealInViewport() {
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && loadFired) {
+      if (entry.isIntersecting && revealReady) {
         entry.target.classList.add('is-visible');
       }
     });
@@ -126,10 +126,15 @@ const revealObserver = new IntersectionObserver(
 );
 revealEls.forEach((el) => revealObserver.observe(el));
 
-window.addEventListener('load', () => {
+function runReveal() {
   window.scrollTo(0, 0);
-  loadFired = true;
+  revealReady = true;
   revealInViewport();
-  /* Reset scroll again after reveal transition so animation can’t trigger nav background */
   setTimeout(() => window.scrollTo(0, 0), 700);
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runReveal);
+} else {
+  runReveal();
+}
