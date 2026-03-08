@@ -133,6 +133,9 @@
   </head>
   <body id="home">
     <nav class="navbar">
+      <a href="#home" class="navbar-logo" aria-label="Chain Duel home">
+        <img src="images/favicon_package/apple-touch-icon.png" alt="Chain Duel" />
+      </a>
       <button
         class="navbar-toggle"
         type="button"
@@ -143,14 +146,10 @@
         <span class="navbar-toggle-icon"></span>
       </button>
       <ul id="navbar-menu" class="navbar-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#videos">Media</a></li>
-        <li><a href="#appearances">Appearances</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#splits">Splits</a></li>
         <li><a href="#infrastructure">Infrastructure</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#contribute">Contribute</a></li>
       </ul>
       <a
         class="nav-play navbar-play-persistent"
@@ -163,17 +162,14 @@
 
     <div class="flex full flex-center">
       <div>
-        <div class="hero">
+        <div class="hero reveal" id="overview">
           <h1 id="chainduel">CHAIN DUEL</h1>
           <p id="slogan">The fight for the longest Branch</p>
           <div class="hero-cta-group">
             <a class="hero-cta primary" href="https://game.chainduel.net" target="_blank" rel="noopener noreferrer">Play Now</a>
-            <a class="hero-cta secondary" href="#contribute">Contribute</a>
+            <a class="hero-cta secondary" href="https://github.com/francismars/chain-duel" target="_blank" rel="noopener noreferrer">Contribute</a>
           </div>
-        </div>
-        <div id="overview" class="page-inner">
-          <h2>OVERVIEW</h2>
-          <div class="center max-800">
+          <div class="hero-video center max-800">
             <video width="1000" controls loop autoplay muted playsinline>
               <source
                 src="https://flare-pub.s3.amazonaws.com/u/b3633fb9e5e26c8dae0ab752f31f75d829ec9a7af9c62a3d949a08355e32a613/video/Zo3lmOhaFhsvYOKevalK_.mp4"
@@ -184,25 +180,29 @@
           </div>
           <div class="value-strip">
             <div class="value-item">
-              <h3>Lightning Competition</h3>
+              <h3>Lightning<br>Competition</h3>
               <p>Compete in a Bitcoin-native game where sats are part of the gameplay.</p>
             </div>
             <div class="value-item">
-              <h3>Built In Public</h3>
+              <h3>Built In<br>Public</h3>
               <p>Follow a project with global event traction and open-source roots.</p>
             </div>
             <div class="value-item">
-              <h3>Multiple Ways To Join</h3>
+              <h3>Multiple Ways<br>To Join</h3>
               <p>Play, contribute, fund, or follow the community through your preferred channel.</p>
             </div>
           </div>
         </div>
 
-        <div id="videos" class="page-inner">
-          <h2>MEDIA</h2>
-        </div>
+        <div id="events" class="mb-30 reveal">
+          <div class="page-inner">
+            <h2>EVENTS</h2>
+            <p class="section-intro">
+              Showcased at major Bitcoin and Lightning conferences worldwide.
+            </p>
+          </div>
 
-        <div class="swiper events">
+          <div class="swiper events">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
@@ -210,7 +210,7 @@
                 src="images/slider_events/chainDuel_events_bitcoin2024_nashville.jpg"
                 alt="Chain Duel at Bitcoin 2024 in Nashville"
               />
-              <h2 class="swiper-slide-title">Bitcoin 2024, Nashville 🇺🇸</h2>
+              <h2 class="swiper-slide-title">Bitcoin 2024, <span class="event-location">Nashville </span><span class="event-emoji">🇺🇸</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -218,7 +218,7 @@
                 src="images/slider_events/chainDuel_events_prague2024.jpg"
                 alt="Chain Duel at BTC Prague 2024"
               />
-              <h2 class="swiper-slide-title">BTC Prague 2024 🇨🇿</h2>
+              <h2 class="swiper-slide-title">BTC Prague 2024 <span class="event-emoji">🇨🇿</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -227,7 +227,7 @@
                 alt="Chain Duel at Bitcoin Film Fest Halving Party 2024 in Warsaw"
               />
               <h2 class="swiper-slide-title">
-                Bitcoin Film Fest Halving Party 2024, Warsaw 🇵🇱
+                Bitcoin Film Fest Halving Party 2024, <span class="event-location">Warsaw </span><span class="event-emoji">🇵🇱</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -237,7 +237,7 @@
                 alt="Chain Duel at Innovation Legacy Fest 2024 in San Salvador"
               />
               <h2 class="swiper-slide-title">
-                Innovation Legacy Fest, Parque Cuscatlán 2024, San Salvador 🇸🇻
+                Innovation Legacy Fest, Parque Cuscatlán 2024, <span class="event-location">San Salvador </span><span class="event-emoji">🇸🇻</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -247,7 +247,7 @@
                 alt="Chain Duel at Santorini Halving Party 2024"
               />
               <h2 class="swiper-slide-title">
-                Love is Bitcoin Halving Party 2024, Santorini 🇬🇷
+                Love is Bitcoin Halving Party 2024, <span class="event-location">Santorini </span><span class="event-emoji">🇬🇷</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -256,7 +256,7 @@
                 src="images/slider_events/chainDuel_events_berlin24.jpg"
                 alt="Chain Duel at Bitcoin Day 2024 in Berlin"
               />
-              <h2 class="swiper-slide-title">Bitcoin Day 2024, Berlin 🇩🇪</h2>
+              <h2 class="swiper-slide-title">Bitcoin Day 2024, <span class="event-location">Berlin </span><span class="event-emoji">🇩🇪</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -265,7 +265,7 @@
                 alt="Chain Duel at Bitcoin Atlantis 2024 in Funchal"
               />
               <h2 class="swiper-slide-title">
-                Bitcoin Atlantis 2024, Funchal 🇵🇹
+                Bitcoin Atlantis 2024, <span class="event-location">Funchal </span><span class="event-emoji">🇵🇹</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -274,7 +274,7 @@
                 src="images/slider_events/chainDuel_events_rotan.jpg"
                 alt="Chain Duel at Amity Age 2023 in Roatan"
               />
-              <h2 class="swiper-slide-title">Amity Age 2023, Rotan 🇭🇳</h2>
+              <h2 class="swiper-slide-title">Amity Age 2023, <span class="event-location">Rotan </span><span class="event-emoji">🇭🇳</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -283,7 +283,7 @@
                 alt="Chain Duel at Adopting Bitcoin 2023 in San Salvador"
               />
               <h2 class="swiper-slide-title">
-                Adopting Bitcoin 2023, San Salvador 🇸🇻
+                Adopting Bitcoin 2023, <span class="event-location">San Salvador </span><span class="event-emoji">🇸🇻</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -292,7 +292,7 @@
                 src="images/slider_events/chainDuel_events_azores.jpg"
                 alt="Chain Duel at BTC Azores 2023"
               />
-              <h2 class="swiper-slide-title">BTC Azores 2023, Azores 🇵🇹</h2>
+              <h2 class="swiper-slide-title">BTC Azores 2023, <span class="event-location">Azores </span><span class="event-emoji">🇵🇹</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -300,7 +300,7 @@
                 src="images/slider_events/chainDuel_events_lugano.jpg"
                 alt="Chain Duel at Plan B Forum 2023 in Lugano"
               />
-              <h2 class="swiper-slide-title">Plan B Forum 2023, Lugano 🇨🇭</h2>
+              <h2 class="swiper-slide-title">Plan B Forum 2023, <span class="event-location">Lugano </span><span class="event-emoji">🇨🇭</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -309,7 +309,7 @@
                 alt="Chain Duel at Build the Builders 2023 in Viareggio"
               />
               <h2 class="swiper-slide-title">
-                Build the Builders 2023, Viareggio 🇮🇹
+                Build the Builders 2023, <span class="event-location">Viareggio </span><span class="event-emoji">🇮🇹</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -319,7 +319,7 @@
                 alt="Chain Duel at Baltic Honey Badger 2023 in Riga"
               />
               <h2 class="swiper-slide-title">
-                Baltic Honey Badger 2023, Riga 🇱🇻
+                Baltic Honey Badger 2023, <span class="event-location">Riga </span><span class="event-emoji">🇱🇻</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -329,7 +329,7 @@
                 alt="Chain Duel at Bitcoin Amsterdam 2023"
               />
               <h2 class="swiper-slide-title">
-                Bitcoin Amsterdam 2023, Amsterdam 🇳🇱
+                Bitcoin Amsterdam 2023, <span class="event-location">Amsterdam </span><span class="event-emoji">🇳🇱</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -338,7 +338,7 @@
                 src="images/slider_events/chainDuel_events_cubo.jpg"
                 alt="Chain Duel at Cubo Plus 2023 in El Zonte"
               />
-              <h2 class="swiper-slide-title">Cubo+ 2023, El Zonte 🇸🇻</h2>
+              <h2 class="swiper-slide-title">Cubo+ 2023, <span class="event-location">El Zonte </span><span class="event-emoji">🇸🇻</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -347,7 +347,7 @@
                 alt="Chain Duel at Bitcoin Park 2023 in Nashville"
               />
               <h2 class="swiper-slide-title">
-                Bitcoin Park 2023, Nashville 🇺🇸
+                Bitcoin Park 2023, <span class="event-location">Nashville </span><span class="event-emoji">🇺🇸</span>
               </h2>
             </div>
             <div class="swiper-slide">
@@ -356,7 +356,7 @@
                 src="images/slider_events/chainDuel_events_miami.jpg"
                 alt="Chain Duel at Bitcoin 2023 in Miami"
               />
-              <h2 class="swiper-slide-title">Bitcoin 2023, Miami 🇺🇸</h2>
+              <h2 class="swiper-slide-title">Bitcoin 2023, <span class="event-location">Miami </span><span class="event-emoji">🇺🇸</span></h2>
             </div>
             <div class="swiper-slide">
               <img
@@ -365,7 +365,7 @@
                 alt="Chain Duel at Lightning Summit 2023 in Viareggio"
               />
               <h2 class="swiper-slide-title">
-                Lightning Summit 2023, Viareggio 🇮🇹
+                Lightning Summit 2023, <span class="event-location">Viareggio </span><span class="event-emoji">🇮🇹</span>
               </h2>
             </div>
           </div>
@@ -374,62 +374,56 @@
           <div class="swiper-button-next"></div>
         </div>
 
-        <div id="appearances" class="mb-30 page-inner">
-          <h2>APPEARANCES</h2>
-          <p class="section-intro">
-            Chain Duel is actively showcased at major Bitcoin and Lightning conferences worldwide.
-          </p>
-          <h3 class="label" style="padding-top: 10px">UPCOMING</h3>
-          <p class="appearances-list">
-            Bitcoin 2026, Las Vegas 🇺🇸<br />
-            Bitcoin Ireland 2026 🇮🇪<br />
-            BTC Prague 2026 🇨🇿<br />
-            BTC HEL 2026 🇫🇮<br />
-            Bitcoin Amsterdam 2026 🇳🇱<br />
-          </p>
-          <p></p>
-
-          <h3 class="label" style="padding-top: 10px">PAST</h3>
-
-          <div class="appearances-columns">
-            <p class="appearances-list">
-              Lightning Summit, Tuscany 2023 🇮🇹<br />
-              Bitcoin Miami 2023 🇺🇸<br />
-              Le Paradigme Bitcoin 2023 🇨🇭<br />
-              Power of Lightning Summit, Bitcoin Park 🇺🇸<br />
-              Baltic Honey Badger 2023 🇱🇻<br />
-              Bitcoin Azores 2023 🇵🇹<br />
-              Bitcoin Amsterdam 2023 🇳🇱<br />
-              Build the Builders, Tuscany 2023 🇮🇹<br />
-              Plan B Forum 2023 🇨🇭<br />
-              Adopting Bitcoin 2023 🇸🇻<br />
-              Bitcoin Atlantis 2024, Madeira 🇵🇹<br />
-              Lightning Summit, Tuscany 2024 🇮🇹<br />
-              Bitcoin Alive 2024 🇦🇺<br />
-              Bitcoin Prague 2024 🇨🇿<br />
-              Santorini Halving Party 2024 🇬🇷<br />
-            </p>
-            <p class="appearances-list">
-              Bitcoin Film Fest Halving Party 2024, Warsaw 🇵🇱<br />
-              Innovation Legacy Fest 2024, 🇸🇻<br />
-              Bitcoin Day 2024, Berlin 🇩🇪<br />
-              Bitcoin Conference 2024, Nashville 🇺🇸<br />
-              Bitcoin Amsterdam 2024 🇳🇱<br />
-              Plan B Forum 2024 🇨🇭<br />
-              Satsconf 2024 🇧🇷<br />
-              Adopting Bitcoin 2024 🇸🇻<br />
-              Bitcoin Las Vegas 2025 🇺🇸<br />
-              Barcelona Cyphers Conference 2025 🇪🇸<br />
-              Baltic Honey Badger 2025, Riga 🇱🇻<br />
-              BTC Helsinki 2025 🇫🇮<br />
-              BTC Balkans 2025 🇧🇬<br />
-              Bitcoin Amsterdam 2025 🇳🇱<br />
-              Adopting Bitcoin 2025 🇸🇻<br />
-            </p>
+          <div class="page-inner">
+          <div class="appearances-grid">
+            <h3 class="label appearances-upcoming-heading">Upcoming</h3>
+            <h3 class="label appearances-past-heading">Past</h3>
+            <ul class="appearances-list appearances-upcoming-list">
+              <li><span class="event-name">Bitcoin 2026</span>, <span class="event-location">Las Vegas </span><span class="event-emoji">🇺🇸</span></li>
+              <li><span class="event-name">Bitcoin Ireland 2026</span> <span class="event-emoji">🇮🇪</span></li>
+              <li><span class="event-name">BTC Prague 2026</span> <span class="event-emoji">🇨🇿</span></li>
+              <li><span class="event-name">BTC HEL 2026</span> <span class="event-emoji">🇫🇮</span></li>
+              <li><span class="event-name">Bitcoin Amsterdam 2026</span> <span class="event-emoji">🇳🇱</span></li>
+            </ul>
+            <ul class="appearances-list">
+              <li><span class="event-name">Lightning Summit</span>, <span class="event-location">Tuscany 2023 </span><span class="event-emoji">🇮🇹</span></li>
+              <li><span class="event-name">Bitcoin Miami 2023</span> <span class="event-emoji">🇺🇸</span></li>
+              <li><span class="event-name">Le Paradigme Bitcoin 2023</span> <span class="event-emoji">🇨🇭</span></li>
+              <li><span class="event-name">Power of Lightning Summit, Bitcoin Park</span> <span class="event-emoji">🇺🇸</span></li>
+              <li><span class="event-name">Baltic Honey Badger 2023</span> <span class="event-emoji">🇱🇻</span></li>
+              <li><span class="event-name">Bitcoin Azores 2023</span> <span class="event-emoji">🇵🇹</span></li>
+              <li><span class="event-name">Bitcoin Amsterdam 2023</span> <span class="event-emoji">🇳🇱</span></li>
+              <li><span class="event-name">Build the Builders</span>, <span class="event-location">Tuscany 2023 </span><span class="event-emoji">🇮🇹</span></li>
+              <li><span class="event-name">Plan B Forum 2023</span> <span class="event-emoji">🇨🇭</span></li>
+              <li><span class="event-name">Adopting Bitcoin 2023</span> <span class="event-emoji">🇸🇻</span></li>
+              <li><span class="event-name">Bitcoin Atlantis 2024</span>, <span class="event-location">Madeira </span><span class="event-emoji">🇵🇹</span></li>
+              <li><span class="event-name">Lightning Summit</span>, <span class="event-location">Tuscany 2024 </span><span class="event-emoji">🇮🇹</span></li>
+              <li><span class="event-name">Bitcoin Alive 2024</span> <span class="event-emoji">🇦🇺</span></li>
+              <li><span class="event-name">Bitcoin Prague 2024</span> <span class="event-emoji">🇨🇿</span></li>
+              <li><span class="event-name">Santorini Halving Party 2024</span> <span class="event-emoji">🇬🇷</span></li>
+            </ul>
+            <ul class="appearances-list">
+              <li><span class="event-name">Bitcoin Film Fest Halving Party 2024</span>, <span class="event-location">Warsaw </span><span class="event-emoji">🇵🇱</span></li>
+              <li><span class="event-name">Innovation Legacy Fest 2024</span> <span class="event-emoji">🇸🇻</span></li>
+              <li><span class="event-name">Bitcoin Day 2024</span>, <span class="event-location">Berlin </span><span class="event-emoji">🇩🇪</span></li>
+              <li><span class="event-name">Bitcoin Conference 2024</span>, <span class="event-location">Nashville </span><span class="event-emoji">🇺🇸</span></li>
+              <li><span class="event-name">Bitcoin Amsterdam 2024</span> <span class="event-emoji">🇳🇱</span></li>
+              <li><span class="event-name">Plan B Forum 2024</span> <span class="event-emoji">🇨🇭</span></li>
+              <li><span class="event-name">Satsconf 2024</span> <span class="event-emoji">🇧🇷</span></li>
+              <li><span class="event-name">Adopting Bitcoin 2024</span> <span class="event-emoji">🇸🇻</span></li>
+              <li><span class="event-name">Bitcoin Las Vegas 2025</span> <span class="event-emoji">🇺🇸</span></li>
+              <li><span class="event-name">Barcelona Cyphers Conference 2025</span> <span class="event-emoji">🇪🇸</span></li>
+              <li><span class="event-name">Baltic Honey Badger 2025</span>, <span class="event-location">Riga </span><span class="event-emoji">🇱🇻</span></li>
+              <li><span class="event-name">BTC Helsinki 2025</span> <span class="event-emoji">🇫🇮</span></li>
+              <li><span class="event-name">BTC Balkans 2025</span> <span class="event-emoji">🇧🇬</span></li>
+              <li><span class="event-name">Bitcoin Amsterdam 2025</span> <span class="event-emoji">🇳🇱</span></li>
+              <li><span class="event-name">Adopting Bitcoin 2025</span> <span class="event-emoji">🇸🇻</span></li>
+            </ul>
+          </div>
           </div>
         </div>
 
-        <div id="splits" class="mb-30 page-inner">
+        <div id="splits" class="mb-30 page-inner reveal">
           <h2>SPLITS</h2>
           <p>
             A fraction of the wagered sats is distributed on Lightning to the
@@ -442,7 +436,7 @@
           />
         </div>
 
-        <div id="infrastructure" class="page-inner">
+        <div id="infrastructure" class="page-inner reveal">
           <h2>INFRASTRUCTURE</h2>
           <p>
             The architecture integrates multiple open-source projects and
@@ -470,12 +464,10 @@
           />
         </div>
 
-        <div id="team" class="page-inner">
+        <div id="team" class="page-inner reveal">
           <h2>TEAM</h2>
           <p class="section-intro">
-            We are two Portuguese friends and partners building Chain Duel. We
-            care deeply about Bitcoin, community building, and practical
-            adoption around the world.
+            Two Portuguese friends building Chain Duel—focused on Bitcoin, community, and practical adoption.
           </p>
           <div class="team-grid">
             <article class="team-card">
@@ -486,9 +478,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <h3>Francis Mars</h3>
+              <div class="team-card-header">
+                <h3>Francis Mars</h3>
                 <p class="team-role">Engineer</p>
-              <p>
+              </div>
+              <p class="team-bio">
                 Extrovert builder focused on execution, UX, and
                 community momentum. Known for practical decisions and
                 systems thinking.
@@ -496,13 +490,13 @@
               <p class="team-links">
                 <a href="https://www.francismars.com/" target="_blank" rel="noopener noreferrer">Website</a>
                 <a href="https://github.com/francismars/" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://twitter.com/BtcFrancis" target="_blank" rel="noopener noreferrer">X</a>
                 <a
                   href="https://njump.me/nprofile1qqs96w4cwmpqdgm66wcffcstlsu5rhel5gdpttyw5akkjxz8x7ykdxsf4lell"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Nostr</a
                 >
+                <a href="https://twitter.com/BtcFrancis" target="_blank" rel="noopener noreferrer">x.com</a>
               </p>
             </article>
             <article class="team-card">
@@ -513,9 +507,11 @@
                 loading="lazy"
                 decoding="async"
               />
-              <h3>Pedro</h3>
-              <p class="team-role">Designer</p>
-              <p>
+              <div class="team-card-header">
+                <h3>Pedro 🧨</h3>
+                <p class="team-role">Designer</p>
+              </div>
+              <p class="team-bio">
                 Creative lead shaping visual experience with
                 relentless curiosity, craft, and a sharp eye for Bitcoin-native
                 product storytelling.
@@ -523,87 +519,49 @@
               <p class="team-links">
                 <a href="https://pedromvpg.com/" target="_blank" rel="noopener noreferrer">Website</a>
                 <a href="https://github.com/pedromvpg" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://x.com/pedromvpg" target="_blank" rel="noopener noreferrer">X</a>
                 <a
                   href="https://njump.me/npub13nfdp7p3pacqn6202q33sur4djeehf50xagxq3y3pchhzjptz7yqenvn7c"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Nostr</a
                 >
+                <a href="https://x.com/pedromvpg" target="_blank" rel="noopener noreferrer">x.com</a>
               </p>
             </article>
           </div>
         </div>
-
-        <div id="contribute" class="page-inner">
-          <div class="qr">
-            <h2>Contribute</h2>
-          </div>
-          <div class="handles">
-            <p>
-              <img
-                class="handle-icon"
-                src="https://game.chainduel.net/images/github.png"
-                alt="GitHub icon"
-              />
-              <a
-                href="https://github.com/francismars/chain-duel"
-                target="_blank"
-                >francismars/chain-duel</a
-              >
-            </p>
-          </div>
-          <div class="handles">
-            <p>
-              <img
-                class="handle-icon"
-                src="https://game.chainduel.net/images/telegram_logo.webp"
-                alt="Telegram icon"
-              />
-              <a href="https://t.me/chainduel" target="_blank"
-                >t.me/chainduel</a
-              >
-            </p>
-          </div>
-          <div class="handles">
-            <p>
-              <img
-                class="handle-icon"
-                src="https://game.chainduel.net/images/geyserfund.svg"
-                alt="Geyser icon"
-              />
-              <a href="https://geyser.fund/project/chainduel" target="_blank"
-                >chainduel</a
-              >
-            </p>
-          </div>
-          <div class="handles">
-            <p>
-              <img
-                class="handle-icon"
-                src="https://game.chainduel.net/images/social/Nostr.png"
-                alt="Nostr icon"
-              />
-              <a href="https://primal.net/ChainDuel" target="_blank"
-                >primal.net/ChainDuel</a
-              >
-            </p>
-          </div>
-          <div class="handles">
-            <p>
-              <img
-                class="handle-icon"
-                src="https://game.chainduel.net/images/twitter.webp"
-                alt="X icon"
-              />
-              <a href="https://twitter.com/chainduel" target="_blank"
-                >@chainduel</a
-              >
-            </p>
-          </div>
-        </div>
       </div>
     </div>
+
+    <footer class="site-footer" id="contribute">
+      <div class="footer-inner">
+        <div class="footer-connect">
+          <a href="https://github.com/francismars/chain-duel" target="_blank" rel="noopener noreferrer">
+            <img class="handle-icon" src="images/github.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+          <a href="https://t.me/chainduel" target="_blank" rel="noopener noreferrer">
+            <img class="handle-icon" src="https://game.chainduel.net/images/telegram_logo.webp" alt="Telegram" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://geyser.fund/project/chainduel" target="_blank" rel="noopener noreferrer">
+            <img class="handle-icon" src="https://game.chainduel.net/images/geyserfund.svg" alt="Geyser" />
+            <span>Geyser</span>
+          </a>
+          <a href="https://primal.net/ChainDuel" target="_blank" rel="noopener noreferrer">
+            <img class="handle-icon" src="https://game.chainduel.net/images/social/Nostr.png" alt="Nostr" />
+            <span>Nostr</span>
+          </a>
+          <a href="https://twitter.com/chainduel" target="_blank" rel="noopener noreferrer">
+            <img class="handle-icon" src="images/x.svg" alt="X" />
+            <span>X</span>
+          </a>
+        </div>
+        <p class="footer-copy">
+          © <span id="footer-year">2025</span> Chain Duel. Bitcoin &amp; Lightning game.
+        </p>
+      </div>
+    </footer>
 
     <img
       id="announcement"
