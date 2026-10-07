@@ -5,7 +5,11 @@ const swiper = new Swiper('.events', {
   slidesPerView: 1,
   loop: true,
   //createElements: true,
-  pagination: true,
+  pagination: {
+    el: '.events .swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
   //autoplay: true,
   coverflowEffect: {
       rotate: 50,

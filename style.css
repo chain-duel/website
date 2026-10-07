@@ -826,6 +826,10 @@ video {
   opacity: 1;
 }
 
+.swiper.events > .swiper-pagination {
+  display: none;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 21px;
@@ -1102,6 +1106,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   min-width: 140px;
   padding: 8px 14px;
   border-radius: 0;
@@ -1634,6 +1639,11 @@ html {
     flex-wrap: wrap;
   }
 
+  .appearances-past .appearances-list {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
   #slogan {
     font-size: 16px;
     margin-bottom: 1.6rem;
@@ -1641,6 +1651,40 @@ html {
 }
 
 @media (max-width: 899px) {
+  html {
+    background-color: #000;
+  }
+
+  body {
+    background: transparent;
+    position: relative;
+    z-index: 0;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    pointer-events: none;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.12) 42%,
+        rgba(0, 0, 0, 0.9) 86%,
+        #000 100%
+      ),
+      url(images/chainduel_bg.jpg);
+  }
+
   .navbar {
     padding: 10px 12px;
     display: flex;
@@ -1714,17 +1758,35 @@ html {
   }
 
   .hero-stage {
-    min-height: 100svh;
-    padding: 72px 14px 1.25rem;
+    min-height: 0;
+    justify-content: flex-start;
+    padding: 4px 14px 1.5rem;
+  }
+
+  .hero-cta-group {
+    width: min(84vw, 340px);
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .hero .hero-video {
-    padding: 0 28px;
+    padding: 0;
+    width: min(84vw, 340px);
+  }
+
+  #slogan {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    max-width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
   }
 
   .hero .hero-video video {
-    --hero-video-max-h: 28svh;
-    width: min(72vw, calc(var(--hero-video-max-h) * var(--hero-video-ratio)));
+    width: 100%;
+    max-height: none;
+    height: auto;
   }
 
   .upcoming-card a {
@@ -1739,9 +1801,31 @@ html {
   }
 
   .swiper {
-    height: calc(56vw + 72px);
+    height: calc(56vw + 58px);
     max-height: none;
-    padding: 12px 0 4px;
+    padding: 12px 0 36px;
+    margin-bottom: 2.5rem;
+  }
+
+  .swiper.events > .swiper-pagination {
+    display: block;
+    bottom: 36px;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.72);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
+  }
+
+  .swiper.events .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 1 !important;
+    transform: scale(0.85) !important;
+  }
+
+  .swiper.events .swiper-pagination-bullet-active {
+    background: #fff;
+    transform: scale(1) !important;
   }
 
   #infrastructure img.inline-logo {
@@ -1751,8 +1835,8 @@ html {
   }
 
   .hero-cta {
-    min-width: 220px;
-    width: min(92vw, 320px);
+    min-width: 0;
+    width: 100%;
   }
 
   .appearances-grid {
@@ -1776,6 +1860,11 @@ html {
   .appearances-past {
     grid-template-columns: 1fr;
     gap: 0.4rem;
+  }
+
+  .appearances-past .appearances-list {
+    font-size: 0.95rem;
+    line-height: 1.55;
   }
 
   .appearances-past-heading {
