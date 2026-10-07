@@ -16,9 +16,28 @@ const swiper = new Swiper('.events', {
       slideShadows: true,
   },
   breakpoints: {
-    10: {
+    0: {
+      slidesPerView: 1.08,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 160,
+        modifier: 1,
+        scale: 0.72,
+        slideShadows: false,
+      },
+    },
+    768: {
       slidesPerView: 2,
-    }
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 50,
+        depth: 300,
+        modifier: 1,
+        scale: 0.72,
+        slideShadows: true,
+      },
+    },
   },
   navigation: {
     nextEl: '.swiper-button-next',

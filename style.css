@@ -1672,6 +1672,7 @@ html {
     gap: 0;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 10px;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.82);
     backdrop-filter: blur(16px) saturate(1.2);
     -webkit-backdrop-filter: blur(16px) saturate(1.2);
@@ -1691,6 +1692,7 @@ html {
 
   .navbar-menu a {
     width: 100%;
+    box-sizing: border-box;
     display: block;
     text-align: left;
     padding: 7px 14px;
@@ -1716,8 +1718,36 @@ html {
     padding: 72px 14px 1.25rem;
   }
 
+  .hero .hero-video {
+    padding: 0 28px;
+  }
+
   .hero .hero-video video {
-    --hero-video-max-h: 42svh;
+    --hero-video-max-h: 28svh;
+    width: min(72vw, calc(var(--hero-video-max-h) * var(--hero-video-ratio)));
+  }
+
+  .upcoming-card a {
+    align-items: center;
+  }
+
+  .upcoming-card img {
+    width: min(100%, 240px);
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .swiper {
+    height: calc(56vw + 72px);
+    max-height: none;
+    padding: 12px 0 4px;
+  }
+
+  #infrastructure img.inline-logo {
+    height: 64px;
+    width: auto;
+    margin: 14px 16px;
   }
 
   .hero-cta {
